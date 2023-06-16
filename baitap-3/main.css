@@ -7,8 +7,9 @@
     padding: 20px;
     box-sizing: border-box;
 }
-a{
-   color :black
+a{ text-decoration: none;
+   color :rgb(207, 203, 203)
+
 }
 
 
