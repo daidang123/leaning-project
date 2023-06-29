@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100vh;
+    background-color:#fff;
+
+}
+
+
+.container {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: center;
+    align-items: center;
+    background-color:#fff;
+    
+}
+.logo-face, .form-face, form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+ 
+}
+.logo-face {
+
+    width: 500px;
+    align-items: flex-start;
+    margin-right: 32px;
+    flex-direction: column;
+
+}
+
+.logo-face img {
+    height: 106px;
+    width: 302px;
+    object-fit: cover;
+}
+
+.logo-face h2 {
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
+    padding-bottom: 20px;
+}
+
+.form-face {
+    width: 400px;
+}
+form {
+
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    width: 400px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+form input {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #dddfe2;
+  outline: none;
+  font-size: 12px;
+}
+
+.login {
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    font-family: Arial;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 332px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+ 
+
+.forget {
+    margin: 15px 0;
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.sign-up {
+    padding-top: 20px;
+    border-top: 1px solid #dddfe2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.new-acc {
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-family:Arial;
+    line-height: 48px;
+    padding: 0 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #42b72a;
+    transition: 0.5s;
+}
+.new-acc:hover {
+    background-color: green;
+}
+
+.create {
+    font-family: Arial;
+    font-size: 15px;
+    
+}
+.create a {
+
+    font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
+}
