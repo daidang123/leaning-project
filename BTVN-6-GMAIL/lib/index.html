@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí Gmail</title>
+    <link rel="stylesheet" href="/asstes/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="/asstes/css/anh/logo.svg" alt="Google">
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="item-left">
+            <h2>Bắt đầu nào</h2>
+
+            
+            <div class="input-data">
+                <input type="text" required> 
+                <label>Tên doanh nghiệp</label>
+            </div>
+            
+
+
+            <p>Số lượng nhân viên, bao gồm cả bạn </p>
+
+            <ul>
+
+                <li>
+                    <input class="staff-radio" type="radio" name="staff" value="" checked>
+                    <label>chỉ có bạn</label></li>
+                <li>
+                    <input class="staff-radio" type="radio" name="staff" value="" checked>
+                    <label>2 đến 9 người</label></li>
+
+                <li>
+                    <input class="staff-radio" type="radio" name="staff" value="" checked>
+                    <label>10 đến 99 người</label>
+                </li>
+
+                <li>
+                    <input class="staff-radio" type="radio" name="staff" value="" checked>
+                    <label>100 đến 299 người</label>
+                </li>
+
+                <li>
+                    <input class="staff-radio" type="radio" name="staff" value="" checked>
+                    <label>300+</label>
+                </li>
+
+
+
+            </ul>
+            
+            <div class="location">
+                <div class="location-label">
+                    <span>Khu Vực</span>
+                </div>
+                <span id="location-select">Việt Nam</span>
+                <div class="drop-down"></div>
+                <div class="content-hidden">
+                    <ul>
+                        <li>Vương Quốc Anh</li>
+                        <li>Lào</li>
+                        <li>Campuchia</li>
+                        <li>Thái Lan</li>
+                        <li>Trung Quốc</li>
+                        <li>Việt Nam</li>
+                        <li>Việt Nam</li>
+                        <li>Việt Nam</li>
+                        <li>Việt Nam</li>
+                        <li>Việt Nam</li>
+                        <li>Việt Nam</li>
+                        <li>Việt Nam</li>
+                        <li>Việt Nam</li>
+                        <li>Việt Nam</li>
+                        <li>Việt Nam</li>
+                        <li>Việt Nam</li>
+                    </ul>
+                </div>
+            </div>
+            <p> Địa chỉ IP của bạn cho biết bạn đang ở một quốc gia khác. Sau khi đăng ký, bạn không thể thay đổi quốc gia của mình.</p>
+            <div class="buttom-next">
+                <button>
+                    <a href="#">Tiếp theo</a>
+                </button>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+        <div class="item-right">
+            <div class="service">
+                <div class="service-1">
+                    <div class="meet-icon">
+                        <img src="/asstes/css/anh/Meet_Product_Icon.svg" alt="meet">
+                        <p>Meet</p>
+                    </div>
+
+                    
+                    <div class="meet-text">
+                        <p>An tâm làm việc từ xa</p>
+                        <p>Sử dụng Google Meet để tổ chức các cuộc họp video bảo mật, chất lượng cao ngay từ email hoặc lịch của bạn</p>
+                    </div>
+
+                </div>
+
+                <div class="service-2">
+                    <h3>Làm được nhiều việc hơn với <br> Google Workspace</h3>
+                    
+                    <img src="/asstes/css/anh/products_lockup_icon-2.svg" alt="">
+                    <ul>
+                        <li>Email tùy chỉnh chứa miền của bạn</li>
+                        <li>Hoạt động trên nền tảng đám mây và không cần cài đặt</li>
+                        <li>Các tính năng quản trị và bảo mật nâng cao</li>
+                        <li>Yên tâm nhờ có dịch vụ hỗ trợ 24/7</li>
+                        <li>Dùng thử miễn phí 14 ngày, sau đó tính phí hàng tháng</li>
+
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            
+            $('.location').click(function() {
+                $('.content-hidden').toggle();
+            });
+        });
+
+        $('.content-hidden ul li').click(function() {
+            var locationArray = $('.content-hidden ul li');
+            $.each(locationArray, function(index, item) {
+                $(item).css('background', '#fafafa')
+            });
+            $('#location-select')[0].innerHTML = $(this).text();
+            $(this).css('background', 'red');
+        });
+
+    </script>
+</body> 
+</html>
